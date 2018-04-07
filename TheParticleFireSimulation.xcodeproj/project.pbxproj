@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D71A28212076C890001BA13C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D71A28202076C890001BA13C /* main.cpp */; };
 		D71A28292076C8DA001BA13C /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D71A28282076C8DA001BA13C /* libSDL2-2.0.0.dylib */; };
+		D71A283020770210001BA13C /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D71A282E20770210001BA13C /* Screen.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,8 @@
 		D71A281D2076C890001BA13C /* TheParticleFireSimulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TheParticleFireSimulation; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71A28202076C890001BA13C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D71A28282076C8DA001BA13C /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../usr/local/Cellar/sdl2/2.0.8/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		D71A282E20770210001BA13C /* Screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
+		D71A282F20770210001BA13C /* Screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Screen.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				D71A28202076C890001BA13C /* main.cpp */,
+				D71A282E20770210001BA13C /* Screen.cpp */,
+				D71A282F20770210001BA13C /* Screen.hpp */,
 			);
 			path = TheParticleFireSimulation;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D71A28212076C890001BA13C /* main.cpp in Sources */,
+				D71A283020770210001BA13C /* Screen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
