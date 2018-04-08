@@ -31,7 +31,6 @@ int main() {
     Swarm swarm;
     
     while(true) {
-        // Update particles
         
         // Draw particles
         
@@ -39,9 +38,9 @@ int main() {
         
         swarm.update(elapsed);
         
-        unsigned char green = (unsigned char)((1 +sin(elapsed * 0.0001)) * 128);
+        unsigned char green = (unsigned char)((1 +sin(elapsed * 0.0001)) * 64);
         unsigned char red = (unsigned char)((1 +sin(elapsed * 0.0002)) * 128);
-        unsigned char blue = (unsigned char)((1 +sin(elapsed * 0.0003)) * 128);
+        unsigned char blue = (unsigned char)((1 +sin(elapsed * 0.0003)) * 100);
         
         const Particle * const pParticles = swarm.getParticles();
         
