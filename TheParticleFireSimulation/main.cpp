@@ -54,7 +54,7 @@ int main() {
             screen.setPixel(x, y, red, green, blue);
         }
         
-//        screen.boxBlur();
+        screen.boxBlur();
         
         // Draw the screen
         screen.update();

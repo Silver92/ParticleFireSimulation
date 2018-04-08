@@ -64,8 +64,9 @@ namespace caveofprogramming {
                 int greenTotal = 0;
                 int blueTotal = 0;
                 
-                for(int row=-1; row<1; row++) {
+                for(int row=-1; row<=1; row++) {
                     for(int col=-1; col<=1; col++) {
+                        
                         int currentX = x + col;
                         int currentY = y + row;
                         

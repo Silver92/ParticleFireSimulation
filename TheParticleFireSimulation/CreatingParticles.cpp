@@ -17,7 +17,7 @@ namespace caveofprogramming {
     
     void Particle::init() {
         m_direction = (2.0 * M_PI * rand())/RAND_MAX;
-        m_speed = (0.04 * rand())/RAND_MAX;
+        m_speed = (0.0001 * rand())/RAND_MAX;
         
 //        m_speed = m_speed * m_speed;
     }
