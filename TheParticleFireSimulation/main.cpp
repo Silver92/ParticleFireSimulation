@@ -20,6 +20,7 @@ using namespace caveofprogramming;
 
 int main() {
     
+    srand(time(NULL));
     
     Screen screen;
     
@@ -36,12 +37,11 @@ int main() {
         
         int elapsed = SDL_GetTicks();
         
-        screen.clear();
-        swarm.update();
+        swarm.update(elapsed);
         
-        unsigned char green = (1 +cos(elapsed * 0.001)) * 128;
-        unsigned char red = (1 +sin(elapsed * 0.002)) * 128;
-        unsigned char blue = (1 +cos(elapsed * 0.003)) * 128;
+        unsigned char green = (unsigned char)((1 +sin(elapsed * 0.0001)) * 128);
+        unsigned char red = (unsigned char)((1 +sin(elapsed * 0.0002)) * 128);
+        unsigned char blue = (unsigned char)((1 +sin(elapsed * 0.0003)) * 128);
         
         const Particle * const pParticles = swarm.getParticles();
         
@@ -53,6 +53,8 @@ int main() {
             
             screen.setPixel(x, y, red, green, blue);
         }
+        
+//        screen.boxBlur();
         
         // Draw the screen
         screen.update();
