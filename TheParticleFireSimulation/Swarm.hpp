@@ -11,7 +11,7 @@
 
 #include "CreatingParticles.hpp"
 
-namespace caveofprogramming {
+namespace ParticleFire {
     
     class Swarm {
     public:

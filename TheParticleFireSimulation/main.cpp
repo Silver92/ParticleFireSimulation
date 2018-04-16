@@ -16,11 +16,9 @@
 #include "Swarm.hpp"
 
 using namespace std;
-using namespace caveofprogramming;
+using namespace ParticleFire;
 
 int main() {
-    
-    srand(time(NULL));
     
     Screen screen;
     
@@ -32,18 +30,18 @@ int main() {
     
     while(true) {
         
-        // Draw particles
-        
+        // Update the particle swarms statement
         int elapsed = SDL_GetTicks();
-        
         swarm.update(elapsed);
         
-        unsigned char green = (unsigned char)((1 +sin(elapsed * 0.0001)) * 64);
+        // Adjust color changing patterns
         unsigned char red = (unsigned char)((1 +sin(elapsed * 0.0002)) * 128);
+        unsigned char green = (unsigned char)((1 +sin(elapsed * 0.0001)) * 64);
         unsigned char blue = (unsigned char)((1 +sin(elapsed * 0.0003)) * 100);
         
         const Particle * const pParticles = swarm.getParticles();
         
+        // Draw Particles
         for(int i=0; i<Swarm::NPARTICLES; i++) {
             Particle particle = pParticles[i];
             
@@ -53,9 +51,10 @@ int main() {
             screen.setPixel(x, y, red, green, blue);
         }
         
+        // Implement the blur effect
         screen.boxBlur();
         
-        // Draw the screen
+        // Update the screen
         screen.update();
         
         // Check for messages/events
@@ -64,6 +63,7 @@ int main() {
         }
     }
     
+    // Post processing after close the screen
     screen.close();
     
     return 0;

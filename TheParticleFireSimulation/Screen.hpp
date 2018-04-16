@@ -11,7 +11,7 @@
 
 #include <SDL2/SDL.h>
 
-namespace caveofprogramming {
+namespace ParticleFire {
     
     class Screen {
     public:

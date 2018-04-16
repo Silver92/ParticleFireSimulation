@@ -9,7 +9,7 @@
 #ifndef CreatingParticles_hpp
 #define CreatingParticles_hpp
 
-namespace caveofprogramming {
+namespace ParticleFire {
     class Particle {
     private:
 

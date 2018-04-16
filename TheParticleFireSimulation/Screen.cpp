@@ -8,7 +8,7 @@
 
 #include "Screen.hpp"
 
-namespace caveofprogramming {
+namespace ParticleFire {
     Screen::Screen():  m_window(nullptr), m_renderer(nullptr),
     m_texture(nullptr), m_buffer1(nullptr), m_buffer2(nullptr) {
        

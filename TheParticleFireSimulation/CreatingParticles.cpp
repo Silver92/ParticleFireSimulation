@@ -10,7 +10,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-namespace caveofprogramming {
+namespace ParticleFire {
     Particle::Particle(): m_x(0), m_y(0) {
         init();
     }
