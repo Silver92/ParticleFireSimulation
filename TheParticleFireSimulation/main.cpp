@@ -9,10 +9,11 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <math.h>
-#include "Screen.hpp"
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+
+#include "Screen.hpp"
 #include "Swarm.hpp"
 
 using namespace std;
@@ -39,9 +40,10 @@ int main() {
         unsigned char green = (unsigned char)((1 +sin(elapsed * 0.0001)) * 64);
         unsigned char blue = (unsigned char)((1 +sin(elapsed * 0.0003)) * 100);
         
+        // Get all the the particles
         const Particle * const pParticles = swarm.getParticles();
         
-        // Draw Particles
+        // Design the start position of each particle
         for(int i=0; i<Swarm::NPARTICLES; i++) {
             Particle particle = pParticles[i];
             

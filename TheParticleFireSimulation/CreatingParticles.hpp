@@ -11,21 +11,20 @@
 
 namespace ParticleFire {
     class Particle {
-    private:
-
+    // Public variables
     public:
         double m_x;
         double m_y;
-        
+    // Private variables
     private:
         double m_speed;
         double m_direction;
-        
+    // Public functions
     public:
         Particle();
         virtual ~Particle();
         void update(int interval);
-        
+    // Private functions
     private:
         void init();
     };

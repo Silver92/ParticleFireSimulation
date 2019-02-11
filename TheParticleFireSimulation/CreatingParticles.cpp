@@ -22,10 +22,6 @@ namespace ParticleFire {
         m_speed = m_speed * m_speed;
     }
     
-    Particle::~Particle() {
-        
-    }
-    
     void Particle::update(int interval) {
         
         m_direction += interval*0.0002;

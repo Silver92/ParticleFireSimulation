@@ -9,6 +9,7 @@
 #include "Swarm.hpp"
 
 namespace ParticleFire {
+    
     Swarm::Swarm(): lastTime(0) {
         m_pParticles = new Particle[NPARTICLES];
     }
