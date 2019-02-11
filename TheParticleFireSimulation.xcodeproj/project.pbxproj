@@ -12,6 +12,7 @@
 		D71A283020770210001BA13C /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D71A282E20770210001BA13C /* Screen.cpp */; };
 		D758395C2079DB4D000E45F7 /* CreatingParticles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D758395A2079DB4D000E45F7 /* CreatingParticles.cpp */; };
 		D758395F2079DB9E000E45F7 /* Swarm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D758395D2079DB9E000E45F7 /* Swarm.cpp */; };
+		D7CCD1CA2211D09D00828646 /* ParticleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7CCD1C82211D09D00828646 /* ParticleManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		D758395B2079DB4D000E45F7 /* CreatingParticles.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreatingParticles.hpp; sourceTree = "<group>"; };
 		D758395D2079DB9E000E45F7 /* Swarm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Swarm.cpp; sourceTree = "<group>"; };
 		D758395E2079DB9E000E45F7 /* Swarm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Swarm.hpp; sourceTree = "<group>"; };
+		D7CCD1C82211D09D00828646 /* ParticleManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleManager.cpp; sourceTree = "<group>"; };
+		D7CCD1C92211D09D00828646 /* ParticleManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				D71A28202076C890001BA13C /* main.cpp */,
+				D7CCD1C82211D09D00828646 /* ParticleManager.cpp */,
+				D7CCD1C92211D09D00828646 /* ParticleManager.hpp */,
 				D758395A2079DB4D000E45F7 /* CreatingParticles.cpp */,
 				D758395B2079DB4D000E45F7 /* CreatingParticles.hpp */,
 				D758395D2079DB9E000E45F7 /* Swarm.cpp */,
@@ -148,6 +153,7 @@
 			files = (
 				D758395F2079DB9E000E45F7 /* Swarm.cpp in Sources */,
 				D758395C2079DB4D000E45F7 /* CreatingParticles.cpp in Sources */,
+				D7CCD1CA2211D09D00828646 /* ParticleManager.cpp in Sources */,
 				D71A28212076C890001BA13C /* main.cpp in Sources */,
 				D71A283020770210001BA13C /* Screen.cpp in Sources */,
 			);
